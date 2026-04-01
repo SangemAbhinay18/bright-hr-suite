@@ -77,6 +77,7 @@ export const payslipData = {
 };
 
 export const offboardingRecords = [
-  { id: '1', name: 'Mark Wilson', department: 'Engineering', lastDate: '2026-03-15', reason: 'Resignation', status: 'completed', exitInterview: true },
-  { id: '2', name: 'Sarah Davis', department: 'Sales', lastDate: '2026-04-01', reason: 'Contract End', status: 'in-progress', exitInterview: false },
+  { id: '1', employeeId: 'EMP-1042', name: 'Mark Wilson', department: 'Engineering', exitDate: '2026-03-15', exitType: 'Resignation' as const, reason: 'Better opportunity', noticePeriod: '30 days', settlementStatus: 'Completed' as const, exitInterviewNotes: 'Positive experience, leaving for higher role at another firm.' },
+  { id: '2', employeeId: 'EMP-1058', name: 'Sarah Davis', department: 'Sales', exitDate: '2026-04-01', exitType: 'Termination' as const, reason: 'Performance issues', noticePeriod: '15 days', settlementStatus: 'Pending' as const, exitInterviewNotes: '' },
+  { id: '3', employeeId: 'EMP-1023', name: 'Robert Chen', department: 'Finance', exitDate: '2026-02-28', exitType: 'Retirement' as const, reason: 'Planned retirement', noticePeriod: '60 days', settlementStatus: 'Completed' as const, exitInterviewNotes: 'Long-standing employee, smooth transition completed.' },
 ];
